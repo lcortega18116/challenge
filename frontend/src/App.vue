@@ -129,13 +129,11 @@ const analyzeStocks = computed(() => {
     const currentRating = item.rating_to.toLowerCase()
     const previousRating = item.rating_from.toLowerCase()
     
-    const currentScore = Object.keys(ratingScore).find(key => currentRating.includes(key))
-      ? ratingScore[Object.keys(ratingScore).find(key => currentRating.includes(key))!]
-      : 3
+    const currentKey = Object.keys(ratingScore).find(key => currentRating.includes(key))
+    const currentScore: number = currentKey ? (ratingScore[currentKey] ?? 3) : 3
     
-    const previousScore = Object.keys(ratingScore).find(key => previousRating.includes(key))
-      ? ratingScore[Object.keys(ratingScore).find(key => previousRating.includes(key))!]
-      : 3
+    const previousKey = Object.keys(ratingScore).find(key => previousRating.includes(key))
+    const previousScore: number = previousKey ? (ratingScore[previousKey] ?? 3) : 3
     
     if (currentScore >= 4) {
       score += 20
