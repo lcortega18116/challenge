@@ -1,0 +1,57 @@
+#logs
+./frontend/logs
+./backend/logs
+./frontend/*.log
+./frontend/npm-debug.log*
+./frontend/yarn-debug.log*
+./frontend/yarn-error.log*
+./frontend/pnpm-debug.log*
+./frontend/lerna-debug.log*
+
+#nodemodules
+./frontend/node_modules
+./backend/node_modules
+# .DS_Store
+./frontend/.DS_Store
+./backend/.DS_Store
+#dist
+./frontend/dist
+./backend/dist
+#dist-ssr
+./frontend/dist-ssr
+./backend/dist-ssr
+#coverage
+./frontend/coverage
+./backend/coverage
+#*.local
+./frontend/*.local
+./backend/*.local
+# # Environment variables
+./frontend/.env
+./frontend/.env.local
+./frontend/.env.*.local
+./backend/.env
+./backend/.env.local
+./backend/.env.*.local
+# # Editor directories and files
+./frontend/.vscode/*
+./backend/.vscode/*
+!./frontend/.vscode/extensions.json
+./frontend/.idea
+./frontend/*.suo
+./frontend/*.ntvs*
+./frontend/*.njsproj
+./frontend/*.sln
+./frontend/*.sw?
+# *.tsbuildinfo
+./frontend/*.tsbuildinfo
+# .eslintcache
+./frontend/.eslintcache
+# # Cypress
+./frontend/cypress/videos/
+./backend/cypress/videos/
+./frontend/cypress/screenshots/
+# # Vitest
+./frontend/__screenshots__/
+
+
